@@ -150,7 +150,8 @@
             android:id="@+id/spinner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:entries="@array/domisili" />
 
         <Button
             android:id="@+id/buttonOK"
@@ -204,11 +205,6 @@
             android:layout_gravity="center_horizontal"
             android:gravity="center_horizontal"
             tools:text="Hasil Domisili" />
-
-        <ScrollView
-            android:id="@+id/scrollView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
 
     </LinearLayout>
 </ScrollView>

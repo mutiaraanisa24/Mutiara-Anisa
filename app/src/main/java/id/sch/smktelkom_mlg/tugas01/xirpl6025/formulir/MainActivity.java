@@ -7,15 +7,18 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
     EditText Nama;
     Button bOk;
-    TextView nHasil, kHasil, hHasil;
+    TextView nHasil, kHasil, hHasil, dHasil;
     RadioButton rbVE, rbD, rbGD, rbN;
     CheckBox cbNF, cbNG, cbMG, cbIN;
+    Spinner spDomisili;
+
 
 
     @Override
@@ -28,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         nHasil = (TextView) findViewById(R.id.textView4);
         kHasil = (TextView) findViewById(R.id.textView5);
         hHasil = (TextView) findViewById(R.id.textView6);
+        dHasil = (TextView) findViewById(R.id.textView7);
 
         rbVE = (RadioButton) findViewById(R.id.radioButtonVE);
         rbD = (RadioButton) findViewById(R.id.radioButtonD);
@@ -38,6 +42,8 @@ public class MainActivity extends AppCompatActivity {
         cbNG = (CheckBox) findViewById(R.id.checkBoxNG);
         cbMG = (CheckBox) findViewById(R.id.checkBoxMG);
         cbIN = (CheckBox) findViewById(R.id.checkBoxIN);
+
+        spDomisili = (Spinner) findViewById(R.id.spinner);
 
         bOk.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -78,6 +84,8 @@ public class MainActivity extends AppCompatActivity {
         if (hohasil.length() == startlen) hohasil += "Tidak ada pada Pilihan";
 
         hHasil.setText(hohasil);
+
+        dHasil.setText("Domisili : " + spDomisili.getSelectedItem().toString());
     }
 
     private void doProcess() {
