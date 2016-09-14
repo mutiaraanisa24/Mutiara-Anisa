@@ -187,18 +187,6 @@
                 tools:text="Hasil Nama" />
 
             <TextView
-                android:id="@+id/textView5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_above="@+id/textView6"
-                android:layout_alignBottom="@+id/radioGroup"
-                android:layout_centerHorizontal="true"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginBottom="72dp"
-                android:gravity="center_horizontal"
-                tools:text="Hasil Kelas" />
-
-            <TextView
                 android:id="@+id/textView6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -219,6 +207,18 @@
                 android:layout_gravity="center_horizontal"
                 android:gravity="center_horizontal"
                 tools:text="Hasil Domisili" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/textView6"
+                android:layout_alignBottom="@+id/radioGroup"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="72dp"
+                android:gravity="center_horizontal"
+                tools:text="Hasil Kelas" />
 
         </LinearLayout>
 
